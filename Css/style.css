@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+}
+
+.nav__bar {
+    display: flex;
+    height: 4rem;
+    background-color: #222629;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+}
+
+.nav__content {
+    padding-left: 3.5rem;
+    font-size: 1.5rem;
+    color: #86c323;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    align-items: center;
+
+}
+
+.nav__list li {
+    list-style: none;
+    padding: 10px;
+
+}
+
+.nav__list li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: poppins;
+}
+
+.nav__list a:hover {
+    color: #86c323;
+    text-decoration: underline;
+    font-size: larger;
+
+}
+
+.container {
+    height: 100vh;
+    background-color: #474b4f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.home__text {
+    font-size: 3rem;
+    font-weight: 400;
+    padding-left: 10px;
+    color: #86c232;
+    box-shadow:
+  41.2px 21px 3.5px -1px rgba(0, 0, 0, 0.038),
+  71.1px 36.2px 8.4px -1px rgba(0, 0, 0, 0.051),
+  91.8px 46.8px 15.8px -1px rgba(0, 0, 0, 0.058),
+  107.6px 54.8px 28.1px -1px rgba(0, 0, 0, 0.063),
+  128.8px 65.6px 52.6px -1px rgba(0, 0, 0, 0.067),
+  214px 109px 126px -1px rgba(0, 0, 0, 0.07)
+;
+
+}
+
+.home__pic img {
+    width: 400px;
+}
+
+.about__text {
+    font-size: 4rem;
+    color: #86c232;
+    box-shadow:
+        41.2px 21px 3.5px -1px rgba(0, 0, 0, 0.038),
+        71.1px 36.2px 8.4px -1px rgba(0, 0, 0, 0.051),
+        91.8px 46.8px 15.8px -1px rgba(0, 0, 0, 0.058),
+        107.6px 54.8px 28.1px -1px rgba(0, 0, 0, 0.063),
+        128.8px 65.6px 52.6px -1px rgba(0, 0, 0, 0.067),
+        214px 109px 126px -1px rgba(0, 0, 0, 0.07);
+
+}
+
+.about__img img {
+    width: 400px;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 15px;
+    height: 5rem;
+    background-color: #474b4f;
+    color: #86c323;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.links a {
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.links a:hover {
+    color: #86c232;
+    text-decoration: underline;
+}
