@@ -31,14 +31,14 @@ body {
 .nav__list {
     display: flex;
     justify-content: space-between;
-    padding-right: 10px;
+    padding-right: 1.5rem;
     align-items: center;
 
 }
 
 .nav__list li {
     list-style: none;
-    padding: 10px;
+    padding: 0.8rem;
 
 }
 
@@ -60,7 +60,7 @@ body {
     background-color: #474b4f;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding-top: 20px;
 }
@@ -70,14 +70,6 @@ body {
     font-weight: 400;
     padding-left: 10px;
     color: #86c232;
-    box-shadow:
-  41.2px 21px 3.5px -1px rgba(0, 0, 0, 0.038),
-  71.1px 36.2px 8.4px -1px rgba(0, 0, 0, 0.051),
-  91.8px 46.8px 15.8px -1px rgba(0, 0, 0, 0.058),
-  107.6px 54.8px 28.1px -1px rgba(0, 0, 0, 0.063),
-  128.8px 65.6px 52.6px -1px rgba(0, 0, 0, 0.067),
-  214px 109px 126px -1px rgba(0, 0, 0, 0.07)
-;
 
 }
 
@@ -88,19 +80,27 @@ body {
 .about__text {
     font-size: 4rem;
     color: #86c232;
-    box-shadow:
-        41.2px 21px 3.5px -1px rgba(0, 0, 0, 0.038),
-        71.1px 36.2px 8.4px -1px rgba(0, 0, 0, 0.051),
-        91.8px 46.8px 15.8px -1px rgba(0, 0, 0, 0.058),
-        107.6px 54.8px 28.1px -1px rgba(0, 0, 0, 0.063),
-        128.8px 65.6px 52.6px -1px rgba(0, 0, 0, 0.067),
-        214px 109px 126px -1px rgba(0, 0, 0, 0.07);
-
 }
 
 .about__img img {
     width: 400px;
 }
+.about__text button{
+    background-color:#474b4f ;
+    height: 4.1rem;
+    width: 24rem;
+    border-radius: 1.1rem;
+    font-size: 0.3em;
+    color: #86c232;
+    border: solid #222629;
+}
+.about__text button:hover{
+    transform: translateX(0.5rem);
+    background-color: #86c232;
+    color: aliceblue;
+    transition: all linear 0.5s;
+}
+
 
 .footer {
     width: 100%;
@@ -110,10 +110,11 @@ body {
     padding-right: 10px;
     padding-left: 15px;
     height: 5rem;
-    background-color: #474b4f;
+    background-color:#222629;
     color: #86c323;
     font-size: 18px;
     font-weight: 500;
+    
 }
 
 .links a {
@@ -177,4 +178,61 @@ body {
       padding-left: 0;
       font-size: 13px;
   }
+}
+ 
+/* portfolio stuling */
+
+.Portfolio{
+    height: 90vh;
+    background-color: #7ca93efa;
+}
+.portfolio__head{
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FFF;
+}
+.card__wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    margin: 2rem;
+}
+.card{
+    background-color:#222629;
+    border-radius: 10px;
+    border: transparent;
+    padding: 3rem 2rem;
+    position: relative;
+    text-align: center;
+    width: auto;
+    min-height: 500px;
+
+}
+.card h2{
+    color: #fff;
+    padding-bottom: 2rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+}
+.card p{
+  line-height: 1.6;
+  color: #86c232;
+}
+
+.card:hover p{ 
+    color: #222629;
+}
+.card:hover h2{
+    color:#7ec915;
+
+}
+.card:hover{
+    background-color: #ebfbd4e6;
+    transform: translateY(-0.5rem);
+    transition: all linear 0.5s;
+}
+
+.card a{
+    text-decoration: none;
 }
