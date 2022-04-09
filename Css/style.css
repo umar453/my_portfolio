@@ -206,7 +206,7 @@ body {
     position: relative;
     text-align: center;
     width: auto;
-    min-height: 500px;
+    max-height: 50rem;
 
 }
 .card h2{
