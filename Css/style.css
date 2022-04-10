@@ -51,7 +51,7 @@ body {
 .nav__list a:hover {
     color: #86c323;
     text-decoration: underline;
-    font-size: larger;
+    transition: all  ease-in 0.5s;
 
 }
 
@@ -64,19 +64,22 @@ body {
     align-items: center;
     padding-top: 20px;
 }
-
+/* home section styling */
 .home__text {
     font-size: 3rem;
     font-weight: 400;
     padding-left: 10px;
-    color: #86c232;
+    color: #fff;
 
+}
+.home__text span{
+    color: #86c232;
 }
 
 .home__pic img {
     width: 400px;
 }
-
+/* about section styling */
 .about__text {
     font-size: 4rem;
     color: #86c232;
@@ -96,11 +99,13 @@ body {
 }
 .about__text button:hover{
     transform: translateX(0.5rem);
-    background-color: #86c232;
-    color: aliceblue;
+    background-color: #86c232d6;
+    color: rgba(232, 234, 235, 0.897);
     transition: all linear 0.5s;
 }
 
+
+ /* footer styling */
 
 .footer {
     width: 100%;
@@ -127,60 +132,8 @@ body {
     color: #86c232;
     text-decoration: underline;
 }
-@media only screen and (max-width: 650px){
-  .nav__bar{
-      height: 2rem;
-      flex-wrap: nowrap;
-      font-size: 12px;
-      justify-content: space-between;
-      width: 100vw;
-  }
-  .nav__content{
-      font-size: 14px;
-      padding-left: 15px;
-  }
-  .container{
-      flex-direction: column;
-      align-items: center;
-      
-  }
-  .home__pic img{
-      width: 300px;
-  }
-  .home__text
-  {
-      text-align: center;
-      font-size: 2rem;
-      box-shadow: none;
-  }
-  .about__img img{
-      width: 300px;
-  }
-  .about__text{
-      font-size: 2.3rem;
-      /* padding-left: 50px */
-      margin-top: -400px;
-      text-align: center;
-      box-shadow: none;
-  }
-  .footer{
-      font-size: 14px;
-      height: 5rem;
-      
-      
-  }
-  .links{
-      display: flex;
-      padding: 2px;
-  }
-  .footer__content{
-      text-align: left;
-      padding-left: 0;
-      font-size: 13px;
-  }
-}
  
-/* portfolio stuling */
+/* portfolio styling */
 
 .Portfolio{
     height: 90vh;
@@ -203,10 +156,10 @@ body {
     border-radius: 10px;
     border: transparent;
     padding: 3rem 2rem;
-    position: relative;
+    /* position: relative; */
     text-align: center;
     width: auto;
-    max-height: 50rem;
+    min-height: 30rem;
 
 }
 .card h2{
