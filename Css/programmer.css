@@ -45,6 +45,7 @@ body{
     margin-top: 4rem;
     height:30rem;
     border-radius: 1rem;
+    width: 30rem;
 }
 .card h2{
     text-align: center;
