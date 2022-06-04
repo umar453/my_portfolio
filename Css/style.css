@@ -5,7 +5,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+    color: #ebfbd4e6;
+}
 body {
     font-family: 'Poppins';
     scroll-behavior: smooth;
@@ -26,6 +29,10 @@ body {
     padding-left: 3.5rem;
     font-size: 1.5rem;
     color: #86c323;
+}
+.nav__content img{
+    width: 44px;
+    height:44px;
 }
 
 .nav__list {
@@ -81,7 +88,11 @@ body {
 }
 /* about section styling */
 .about__text {
+    position: relative;
     font-size: 4rem;
+    color: #fff;
+}
+.about__text span{
     color: #86c232;
 }
 
@@ -89,13 +100,14 @@ body {
     width: 400px;
 }
 .about__text button{
-    background-color:#474b4f ;
+    background-color: #86c232d6;
     height: 4.1rem;
-    width: 24rem;
+    width: 20rem;
     border-radius: 1.1rem;
     font-size: 0.3em;
-    color: #86c232;
+    color: rgba(232, 234, 235, 0.897);
     border: solid #222629;
+    cursor: pointer;
 }
 .about__text button:hover{
     transform: translateX(0.5rem);
@@ -104,7 +116,39 @@ body {
     transition: all linear 0.5s;
 }
 
+.contact-details{
+    display:none;
+z-index: 1;
+    position: absolute;
+    font-size: 20px;
+    margin-top: 1rem;
+    left: 21.5rem;
+    right: 0;
+    background-color: #86c232d6;
+    border-radius: 10px;
+    transition:all linear 0.3s;
+}
 
+.show{
+    display: block;
+}
+.contact-details li{
+    list-style: none;
+    padding: 0.5rem;
+    cursor: pointer
+}
+
+
+
+.contact img{
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    padding-top: 4px;
+}
+.download{
+    padding-top: 4px;
+}
  /* footer styling */
 
 .footer {
@@ -160,7 +204,8 @@ body {
     /* position: relative; */
     text-align: center;
     width: auto;
-    height: 30rem;
+    min-height: 30rem;
+    margin-bottom:0;
 
 }
 .card h2{

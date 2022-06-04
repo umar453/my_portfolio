@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Landing Page</title>
     <link rel="stylesheet" href="Css\style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
 
   <body>
     <div class="nav__bar">
-      <div class="nav__content">Muhammad Umar</div>
+      <div class="nav__content"><img src="/Imgs/favicon-32x32.png" alt=""></div>
       <div class="nav__list">
-        <li class="item-11"><a href="#home">Home</a></li>
+        <li class="item-11"><a href="#home"><i><img src="" alt=""></i>Home</a></li>
         <li class="item-12"><a href="#about">About me</a></li>
         <li class="item-12"><a href="#portfolio">Portfolio</a></li>
       </div>
@@ -34,9 +37,17 @@
         <div class="about__img">
           <img src="Imgs/Personal site-rafiki.svg" alt="" />
         </div>
-        <div class="about__text">This is my Portfolio Website
+        <div class="about__text">I'm a <span>Web Developer</span>
           <br>
-            <button>Download CV</button>
+            <button type="button" > <a href="/Imgs/SampleCV.jpg" download>Download CV</a> <i class="fa fa-download" style="font-size:24px"></i></button>
+
+            <button type="button" class="cntct_btn" onclick="toggle()">Contact Me <i class="fa fa-address-card" style="font-size:24px"></i></button>
+            <div class="contact-details" id="contact">
+               <li><i class="fa fa-phone" style="font-size:20px"></i> <a href="03185985150"></a> 03185985150</li>
+               <li><i class="fa fa-facebook-f" style="font-size:24px"></i> Facebook </li>
+               <li><i class="fa fa-linkedin" style="font-size:24px"></i> Linkedin</li>
+               <li><i class="fa fa-envelope" style="font-size:24px"></i> mu247609@gmail.com</li>
+            </div>
           </div>
         </div>
        
@@ -134,5 +145,11 @@
         </div>
       </div>
     </footer>
+    <script>
+      // toggle function for the contact button
+function toggle() {
+    document.getElementById("contact").classList.toggle('show');
+}
+    </script>
   </body>
 </html>
